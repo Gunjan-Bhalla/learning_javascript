@@ -1,11 +1,11 @@
 const accountId = 1223345
-var accountEmail = "doraemon@gmail.com"
-let accountPassword = "12345678"
+let accountEmail = "doraemon@gmail.com"
+var accountPassword = "12345678"
 accountCity = "Chandigarh"
-let accountState
+let accountState;
 
-// accountId = 45678
-// its a constant value, we are not allowed to change its value
+// accountId = 45678 
+// const keyword = its a constant value, we are not allowed to change its value
 
 accountEmail = "nobita@gmail.com"
 accountPassword = "098765"
