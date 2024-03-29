@@ -20,20 +20,34 @@ const JsUser = {
     isLoggedIn: false,
     lastLoginDays: ["Monday", "Saturday"]
 }
-console.log(JsUser.email)
+console.log(JsUser.email) 
 console.log(JsUser["email"])
 console.log(JsUser[mySym])
+/*Output
+doraemon@google.com
+doraemon@google.com
+myKey1
+*/
 
 JsUser.email = "doraemon@cartoon.com"  
 Object.freeze(JsUser)
 console.log(JsUser)
+/*OUTPUT
+{
+  name: 'Doraemon',
+  age: 18,
+  location: 'Jaipur',
+  email: 'doraemon@cartoon.com',
+  isLoggedIn: false,
+  lastLoginDays: [ 'Monday', 'Saturday' ],
+  [Symbol(key1)]: 'myKey1'
+}
+*/
 
 JsUser.greeting = function(){
-    console.log("Hello JS user");
+    console.log("Hello JS User"); 
 }
 JsUser.greetingTwo = function(){
-    console.log(`Hello JS User, ${this.name}`);
+    console.log(`Hello Js User`); 
 }
-
-console.log(JsUser.greeting)
-console.log(JsUser.greetingTwo)
+console.log(JsUser.greeting());
