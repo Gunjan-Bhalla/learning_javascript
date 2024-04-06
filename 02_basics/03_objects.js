@@ -36,7 +36,7 @@ console.log(JsUser)
 {
   name: 'Doraemon',
   age: 18,
-  location: 'Jaipur',
+  location: 'Jaipur', 
   email: 'doraemon@cartoon.com',
   isLoggedIn: false,
   lastLoginDays: [ 'Monday', 'Saturday' ],
